@@ -1,0 +1,47 @@
+class CalculatorService {
+	private double inputData1;
+	private double inputData2;
+	private double result;
+	// constructor alt shift s
+	public CalculatorService() {
+		super();
+	}
+	public CalculatorService(double inputData1, double inputData2) {
+		super();
+		this.inputData1 = inputData1;
+		this.inputData2 = inputData2;
+	}
+	public double getInputData1() {
+		return inputData1;
+	}
+	public void setInputData1(double inputData1) {
+		this.inputData1 = inputData1;
+	}
+	public double getInputData2() {
+		return inputData2;
+	}
+	public void setInputData2(double inputData2) {
+		this.inputData2 = inputData2;
+	}
+	// Business methods
+	public double add(){
+		result=inputData1+inputData2;
+		return result;
+	}
+	public double subtract() {
+		result=inputData1-inputData2;
+		return result;
+	}
+    	
+	
+		
+}
+//This is Client class
+// Server class can be the same
+// another class
+public class TEST2 {
+	public static void main(String[] args) {
+       CalculatorService ob=new CalculatorService();
+	}
+
+}
